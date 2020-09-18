@@ -792,6 +792,8 @@ To go back to Linux, just shut down your Windows, and Libvirt should automatical
 
 7. You can change the boot order after having installed Windows in your VM.
 
+8. If you get the error system thread exception not handled at boot, then add `options kvm ignore_msrs=1` to `/etc/modprobe.d/kvm.conf` and reboot.
+
 ## Conclusion
 
 I hope this guide works for you. If you notice any errors, please do let me know.
